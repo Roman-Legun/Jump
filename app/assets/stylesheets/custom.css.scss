@@ -1,0 +1,146 @@
+.block-menu {
+display: block;
+background: #000;
+}
+.block-menu li {
+display: inline-block;
+}
+.block-menu li a {
+color: #fff;
+display: block;
+text-decoration: none;
+font-family: 'Passion One',Arial,sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-font-smoothing: antialiased;
+font-smoothing: antialiased;
+text-transform: uppercase;
+overflow: visible;
+line-height: 20px;
+font-size: 24px;
+padding: 15px 10px;
+}
+/* animation domination */
+.three-d {
+-webkit-perspective: 200px;
+-moz-perspective: 200px;
+perspective: 200px;
+-webkit-transition: all .07s linear;
+-moz-transition: all .07s linear;
+transition: all .07s linear;
+position: relative;
+}
+.three-d:not(.active):hover {
+cursor: pointer;
+}
+.three-d:not(.active):hover .three-d-box,
+.three-d:not(.active):focus .three-d-box {
+-moz-transform: translateZ(-25px) rotateX(90deg);
+-webkit-transform: translateZ(-25px) rotateX(90deg);
+-o-transform: translateZ(-25px) rotateX(90deg);
+transform: translateZ(-25px) rotateX(90deg);
+}
+.three-d-box {
+-webkit-transition: all .5s ease-out;
+-moz-transition: all .5s ease-out;
+-ms-transition: all .5s ease-out;
+-o-transition: all .5s ease-out;
+transition: all .5s ease-out;
+-webkit-transform: translatez(-25px);
+-moz-transform: translatez(-25px);
+-o-transform: translatez(-25px);
+transform: translatez(-25px);
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+transform-style: preserve-3d;
+pointer-events: none;
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+width: 100%;
+height: 100%;
+}
+.front {
+-webkit-transform: rotatex(0deg) translatez(25px);
+-moz-transform: rotatex(0deg) translatez(25px);
+-o-transform: rotatex(0deg) translatez(25px);
+transform: rotatex(0deg) translatez(25px);
+}
+.back {
+-webkit-transform: rotatex(-90deg) translatez(25px);
+-moz-transform: rotatex(-90deg) translatez(25px);
+-o-transform: rotatex(-90deg) translatez(25px);
+transform: rotatex(-90deg) translatez(25px);
+color: #FFE7C4;
+}
+.front, .back {
+display: block;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: black;
+padding: 15px 10px;
+color: white;
+pointer-events: none;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+
+//меню 2 верхне
+
+
+.exespotlightmenu{
+width: 100%;
+overflow:hidden;
+}
+.exespotlightmenu ul{
+margin: 0;
+padding: 0;
+font: bold 14px Verdana; /* font style and size */
+list-style-type: none;
+text-align: center; /* "left", "center", or "right" align menu */
+}
+.exespotlightmenu li{
+display: inline-block;
+position:relative;
+padding: 5px;
+margin: 0;
+margin-right: 5px; /* right margin between menu items */
+}
+.exespotlightmenu li a{
+display:inline-block;
+padding: 5px;
+min-width:50px; /* horizontal diameter of spotlight */
+height:50px; /* vertical diameter of spotlight */
+text-decoration: none;
+color: #00BFFF;
+margin: 0 auto;
+overflow:hidden;
+-moz-transition: all 0.5s ease-in-out; /* CSS3 transition to animate all A properties */
+-webkit-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+.exespotlightmenu li:hover a{
+color: white;
+background: #a71b15; /* background color of spotlight */
+-webkit-border-radius: 50%; /* large radius to create circular borders */
+-moz-border-radius: 50%;
+border-radius: 50%;
+}
+.exespotlightmenu li a exespan{
+position:relative;
+top:35%; /* move text down so it appears centered within menu item */
+}
+
+
+// кнопка
+
