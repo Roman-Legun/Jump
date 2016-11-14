@@ -7,59 +7,61 @@
 	<%= csrf_meta_tags %>
 
 </head>
-<body class="fff">
-<div class="fff">
-	<div class="container manu">
-		<div class="exespotlightmenu">
-		<div class="zz">
-			<h4><<<<<<<<<<<<<<<<<</h4>
+<body>
+	<div class="all">
+
+		<div class="container manu">
+			<div class="exespotlightmenu">
+				<div class="zz">
+					<h4><<<<<<<<<<<<<<<<<</h4>
+				</div>
+				<div class="z">
+					<h4>>>>>>>>>>>>>>>>>></h4>
+				</div>
+				<ul>
+					<li><a href="##########"><exespan>Головна</exespan></a></li>
+					<li><a href="##########"><exespan>Про блог</exespan></a></li>
+					<li><a href="##########"><exespan>Карта</exespan></a></li>
+					<li><a href="##########"><exespan>Архiв</exespan></a></li>
+					<li><a href="##########"><exespan>Контакти</exespan></a></li>
+				</ul>
+			</div>
+			
+
+			<div class="container">
+				<ul class="block-menu">
+					<li><a href="<%= posts_path %>" class="three-d">
+						Головна
+						<span class="three-d-box"><span class="front">Головна</span><span class="back">Головна</span></span>
+					</a></li>
+					<li><a href="###" class="three-d">
+						Про блог<span class="three-d-box"><span class="front">Про блог</span><span class="back">Про блог</span></span>
+					</a></li>
+					<li><a href="###" class="three-d">
+						Послуги
+						<span class="three-d-box"><span class="front">Послуги</span><span class="back">Послуги</span></span>
+					</a></li>
+					<li><a href="###" class="three-d">
+						Карта
+						<span class="three-d-box"><span class="front">Карта</span><span class="back">Карта</span></span>
+					</a></li>
+					<li><a href="###" class="three-d">
+						Архiв
+						<span class="three-d-box"><span class="front">Архiв</span><span class="back">Архiв</span></span>
+					</a></li>
+					<li class="xx"><%= link_to 'нова стаття', new_post_path, class: 'button2' %></li>
+				</ul>
+			</div>
 		</div>
-		<div class="z">
-			<h4>>>>>>>>>>>>>>>>>></h4>
+
+		<div class="container main">
+			<%= yield %>
 		</div>
-			<ul>
-				<li><a href="##########"><exespan>Главная</exespan></a></li>
-				<li><a href="##########"><exespan>О блоге</exespan></a></li>
-				<li><a href="##########"><exespan>Карта</exespan></a></li>
-				<li><a href="##########"><exespan>Архив</exespan></a></li>
-				<li><a href="##########"><exespan>Контакт</exespan></a></li>
-			</ul>
+
+		<div class="container footer">
+			<h5 id="footer1">нашi контакти: +38(097)xxx-xx-xx</h5>
 		</div>
-	</div>
 
-	<div class="container manu">
-		<ul class="block-menu">
-			<li><a href="<%= posts_path %>" class="three-d">
-				Главная
-				<span class="three-d-box"><span class="front">Главная</span><span class="back">Главная</span></span>
-			</a></li>
-			<li><a href="###" class="three-d">
-				О блоге<span class="three-d-box"><span class="front">О блоге</span><span class="back">О блоге</span></span>
-			</a></li>
-			<li><a href="###" class="three-d">
-				Услуги
-				<span class="three-d-box"><span class="front">Услуги</span><span class="back">Услуги</span></span>
-			</a></li>
-			<li><a href="###" class="three-d">
-				Карта
-				<span class="three-d-box"><span class="front">Карта</span><span class="back">Карта</span></span>
-			</a></li>
-			<li><a href="###" class="three-d">
-				Архив
-				<span class="three-d-box"><span class="front">Архив</span><span class="back">Архив</span></span>
-			</a></li>
-			<li class="xx"><%= link_to 'нова стаття', new_post_path, class: 'button2' %></li>
-		</ul>
-	</div>
-
-	<div class="container main">
-		<%= yield %>
-	</div>
-
-	<div class="container footer">
-		<h5 id="footer1">нашi контакти: +38(097)xxx-xx-xx</h5>
-	</div>
-
-</div>	
+	</div>	
 </body>
 </html>
