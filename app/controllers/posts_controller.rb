@@ -16,9 +16,9 @@ class PostsController < ApplicationController
 	def create
 		@post = Post.new(post_params)
 		if @post.save
-			redirect_to @post
+			redirect_to @post, success: 'Стаття успiшно додана!'
 		else
-			render :new
+			render :new, danger: 'Стаття не додана'
 		end
 	end
 
@@ -27,15 +27,15 @@ class PostsController < ApplicationController
 
 	def update
 		if @post.update_attributes(post_params)
-			redirect_to @post
+			redirect_to @post, success: 'Стаття успiшно обновлена!'
 		else
-			render :edit
+			render :edit, danger: 'Стаття не обновлена!'
 		end
 	end
 
 	def destroy
 		@post.destroy
-		redirect_to posts_path
+		redirect_to posts_path, success: 'Стаття успiшно видалена!'
 	end
 
 	private
