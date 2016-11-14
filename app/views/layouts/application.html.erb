@@ -10,42 +10,49 @@
 <body>
 	<div class="container manu">
 		<div class="exespotlightmenu">
+		<div class="zz">
+			<h4><<<<<<<<<<<<<<<<<<<<</h4>
+		</div>
+		<div class="z">
+			<h4>>>>>>>>>>>>>>>>>>>>></h4>
+		</div>
 			<ul>
 				<li><a href="##########"><exespan>Главная</exespan></a></li>
 				<li><a href="##########"><exespan>О блоге</exespan></a></li>
 				<li><a href="##########"><exespan>Карта</exespan></a></li>
 				<li><a href="##########"><exespan>Архив</exespan></a></li>
 				<li><a href="##########"><exespan>Контакт</exespan></a></li>
-			</ul></div>
-		</div>
-		
-		<div class="container manu">
-			<ul class="block-menu">
-				<li><a href="<%= posts_path %>" class="three-d">
-					Главная
-					<span class="three-d-box"><span class="front">Главная</span><span class="back">Главная</span></span>
-				</a></li>
-				<li><a href="###" class="three-d">
-					О блоге<span class="three-d-box"><span class="front">О блоге</span><span class="back">О блоге</span></span>
-				</a></li>
-				<li><a href="###" class="three-d">
-					Услуги
-					<span class="three-d-box"><span class="front">Услуги</span><span class="back">Услуги</span></span>
-				</a></li>
-				<li><a href="###" class="three-d">
-					Карта
-					<span class="three-d-box"><span class="front">Карта</span><span class="back">Карта</span></span>
-				</a></li>
-				<li><a href="###" class="three-d">
-					Архив
-					<span class="three-d-box"><span class="front">Архив</span><span class="back">Архив</span></span>
-				</a></li>
-				<li class="xx"><%= link_to 'нова стаття', new_post_path, class: 'x' %></li>
 			</ul>
 		</div>
+	</div>
 
-		<div class="container main">
-			<%= yield %>
-		</div>
-	</body>
-	</html>
+	<div class="container manu">
+		<ul class="block-menu">
+			<li><a href="<%= posts_path %>" class="three-d">
+				Главная
+				<span class="three-d-box"><span class="front">Главная</span><span class="back">Главная</span></span>
+			</a></li>
+			<li><a href="###" class="three-d">
+				О блоге<span class="three-d-box"><span class="front">О блоге</span><span class="back">О блоге</span></span>
+			</a></li>
+			<li><a href="###" class="three-d">
+				Услуги
+				<span class="three-d-box"><span class="front">Услуги</span><span class="back">Услуги</span></span>
+			</a></li>
+			<li><a href="###" class="three-d">
+				Карта
+				<span class="three-d-box"><span class="front">Карта</span><span class="back">Карта</span></span>
+			</a></li>
+			<li><a href="###" class="three-d">
+				Архив
+				<span class="three-d-box"><span class="front">Архив</span><span class="back">Архив</span></span>
+			</a></li>
+			<li class="xx"><%= link_to 'нова стаття', new_post_path, class: 'button2' %></li>
+		</ul>
+	</div>
+
+	<div class="container main">
+		<%= yield %>
+	</div>
+</body>
+</html>
