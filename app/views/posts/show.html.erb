@@ -2,4 +2,7 @@
 <%= link_to 'змiнити', edit_post_path(@post) %> |
 <%= link_to 'видалити', post_path(@post), method: :delete, data: {confirm: 'Ви впевненi!'} %>
 
+<p><%= image_tag @post.image.url(:large), class: 'img-show' if @post.image? %></p>
+
 <h3><%= @post.body %></h3>
+	

@@ -9,9 +9,13 @@
 			<%= link_to 'видалити', post_path(post), method: :delete, data: {confirm: 'ви впевненi?'}%>
 		</small>
 	</section>
-	<section class="post-summary">
+
+	<section class="post-summary clearfix">
+		<%= image_tag post.image.url(:thumb), class: 'img-thumbnail thumb' %>
 		<%= post.summary %>
 	</section>
+
+
 </article>
 
 
