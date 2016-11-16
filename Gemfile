@@ -37,6 +37,7 @@ source 'https://rails-assets.org' do
 end
 gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem "mini_magick"
+gem 'trix'
 
 group :production do
 	gem 'pg'
